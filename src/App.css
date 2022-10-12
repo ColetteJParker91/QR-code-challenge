@@ -1,38 +1,51 @@
-.App {
+/*
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: hsl(212, 45%, 89%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  padding: 9%;
 }
 
-.App-link {
-  color: #61dafb;
+.container_item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: all 400ms ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container_item_image {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  display: block;
+}
+
+.container_item h2 {
+  margin: 1.2rem 1rem 1rem;
+  color: hsl(218, 44%, 22%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container_item h3 {
+  margin: 1.2rem 1rem 2rem;
+  color: hsl(220, 15%, 55%);
+  font-size: 15px;
+  font-weight: 400;
 }
